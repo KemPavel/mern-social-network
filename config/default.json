@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb://pkazakov:318650Qq@ds227168.mlab.com:27168/mern-social-network",
+    "jwtSecret": "secrettoken"
+}
