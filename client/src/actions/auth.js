@@ -51,7 +51,7 @@ export const registerUser = ({name, email, password}) => async (dispatch) => {
     dispatch(loadUser());
   } catch(error) {
     const errors = error.response.data.errors;
-    if (errors.length) {
+    if (errors) {
       errors.forEach((err) => {
         dispatch(setAlert(err.msg, 'danger'));
       })
@@ -81,7 +81,7 @@ export const loginUser = (email, password) => async (dispatch) => {
     dispatch(loadUser());
   } catch(error) {
     const errors = error.response.data.errors;
-    if (errors.length) {
+    if (errors) {
       errors.forEach((err) => {
         dispatch(setAlert(err.msg, 'danger'));
       })

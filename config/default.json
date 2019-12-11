@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb://pkazakov:318650Qq@ds227168.mlab.com:27168/mern-social-network",
-  "jwtSecret": "secrettoken"
+  "jwtSecret": "secrettoken",
+  "githubClientId": "4853fd85124d8569a40b",
+  "githubSecret": "23ff88b1eba94f91fafb295a9b36369ee71d1201"
 }

@@ -12,7 +12,7 @@ import {deleteEducation, deleteExperience, deleteAccount} from '../../actions/pr
 const Dashboard = ({getCurrentProfile, deleteEducation, deleteExperience, deleteAccount, auth: {user}, profile: {loading, profile}}) => {
   useEffect(() => {
     getCurrentProfile();
-  }, []);
+  }, [getCurrentProfile]);
 
   return (
     (loading && profile === null) ? <Spinner /> : <Fragment>
