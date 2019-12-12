@@ -19,3 +19,14 @@ export const UPDATE_PROFILE = 'UPDATE_PROFILE';
 export const DELETE_ACCOUNT = 'DELETE_ACCOUNT';
 export const GET_PROFILES_SUCCESS = 'GET_PROFILES_SUCCESS';
 export const GET_REPOS = 'GET_REPOS';
+
+//  POST ACTION TYPES
+export const GET_POST_SUCCESS = 'GET_POST_SUCCESS';
+export const GET_POST_FAILURE = 'GET_POST_FAILURE';
+export const UPDATE_LIKES = 'UPDATE_LIKES';
+export const DELETE_POST = 'DELETE_POST';
+export const ADD_POST = 'ADD_POST';
+export const GET_POST = 'GET_POST';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+
