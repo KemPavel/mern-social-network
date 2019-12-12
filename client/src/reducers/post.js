@@ -5,7 +5,8 @@ import {
   DELETE_POST,
   ADD_POST,
   GET_POST,
-  ADD_COMMENT, REMOVE_ALERT, DELETE_COMMENT
+  ADD_COMMENT,
+  DELETE_COMMENT
 } from '../actions/types';
 
 const initialState = {
