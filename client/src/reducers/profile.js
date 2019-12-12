@@ -3,7 +3,9 @@ import {
   GET_PROFILE_FAILURE,
   CLEAR_PROFILE,
   UPDATE_PROFILE,
-  GET_PROFILES_SUCCESS, GET_REPOS
+  GET_PROFILES_SUCCESS,
+  GET_REPOS,
+  GET_REPOS_FAILURE
 } from '../actions/types';
 
 const initialState = {
@@ -47,6 +49,12 @@ const profileReducer = (state = initialState, {type, payload}) => {
       return {
         ...state,
         repos: payload,
+        loading: false
+      };
+    case GET_REPOS_FAILURE:
+      return {
+        ...state,
+        repos: null,
         loading: false
       };
     default:

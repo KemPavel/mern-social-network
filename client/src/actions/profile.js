@@ -7,7 +7,8 @@ import {
   CLEAR_PROFILE,
   DELETE_ACCOUNT,
   GET_PROFILES_SUCCESS,
-  GET_REPOS
+  GET_REPOS,
+  GET_REPOS_FAILURE
 } from './types';
 
 export const getCurrentProfile = () => async (dispatch) => {
@@ -66,7 +67,7 @@ export const getGithubRepos = (userName) => async (dispatch) => {
     });
   } catch(error) {
     dispatch({
-      type: GET_PROFILE_FAILURE,
+      type: GET_REPOS_FAILURE,
       payload: {msg: error.response.statusText, status: error.response.status}
     });
   }

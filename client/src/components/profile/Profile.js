@@ -11,7 +11,7 @@ import ProfileEducation from './ProfileEducation';
 import GithubProfile from './GithubProfile';
 
 
-const Profile = ({match, getProfileById, profile: {profile, loading}, auth}) => {
+const Profile = ({match, getProfileById, profile: {profile, loading, repos}, auth}) => {
   useEffect(() => {
     getProfileById(match.params.id);
   }, [getProfileById, match.params.id]);
@@ -51,7 +51,7 @@ const Profile = ({match, getProfileById, profile: {profile, loading}, auth}) => 
                 }
               </div>
               {
-                profile.githubusername &&
+                (profile.githubusername && repos && repos.length > 0) &&
                 <GithubProfile userName={profile.githubusername} />
               }
             </div>
