@@ -7,7 +7,8 @@ const app = express();
 // Connect Database
 connectDB();
 
-//Init Middleware
+// Init Middleware
+// Body parser
 app.use(express.json({ extended: false }));
 
  // Define Routes

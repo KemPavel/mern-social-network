@@ -54,7 +54,7 @@ router.post('/', [
         id: user.id
       }
     };
-    // @TODO change expires before deploy to prodaction
+    // @TODO change expires before deploy to production
     jwt.sign(payload, config.get('jwtSecret'), { expiresIn: 360000 }, (error, token) => {
       if(error) {
         throw error;
