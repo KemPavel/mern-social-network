@@ -1,5 +1,5 @@
 # mern-social-network
-## [DEMO here] (https://mern-social-network-51498.herokuapp.com)
+## [DEMO here](https://mern-social-network-51498.herokuapp.com)
 
 ### Learning Mongo Express ReactJS NodeJS stack
 
